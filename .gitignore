@@ -1,16 +1,47 @@
 venv-acc/
-*sqlite3
+env/
+.venv/
+
+# Python bytecode/cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+
+# Logs
 *.log
+
+# Translations
 *.pot
 *.mo
+
+# Editors
 *.swp
 *.swo
+.DS_Store
+
+# Django artifacts
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+static/
+
+# Env and secrets
 .env
-/static/
-/media/
-/node_modules/
+.env.*
+
+# Node
+node_modules/
+
+# Coverage/Test
+.pytest_cache/
+.coverage*
+htmlcov/
+
+# Build
+dist/
+build/
+*.egg-info/
+
+# Tools
 bfg-1.15.0.jar
